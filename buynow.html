@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducks R Us - Buy Now</title>
+    <style>
+        /* styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #e4d88c;
+            background-color: #26170c;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Nav */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #2e1c0f;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #e4d88c;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Header */
+        header {
+            background-color: #2e1c0f;
+            color: #ffd500;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Form Section */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #2e1c0f;
+            padding: 20px;
+            border: 1px solid #555;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        form fieldset {
+            border: none;
+            margin-bottom: 15px;
+        }
+
+        form legend {
+            font-size: 1.2em;
+            color: #ffd500;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #e4d88c;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            background-color: #f8f8f8;
+        }
+
+        /* Order Summary */
+        .order-summary {
+            background-color: #2e1c0f;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #555;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .order-summary h3 {
+            color: #ffd500;
+        }
+
+        .order-summary p {
+            margin: 5px 0;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            form, .order-summary {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Nav -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buy-now.html">Buy Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Ducks R Us - Buy Now</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Order Form -->
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="name">Customer Name *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Customer Phone *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Product Quantities</legend>
+                <label for="duckling">Duckling</label>
+                <input type="number" id="duckling" name="duckling" min="0" value="0">
+
+                <label for="mallard">Mallard</label>
+                <input type="number" id="mallard" name="mallard" min="0" value="0">
+
+                <label for="DUCK">THE DUCK</label>
+                <input type="number" id="DUCK" name="DUCK" min="0" value="0">
+            </fieldset>
+
+            <input type="submit" value="Place Order">
+        </form>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <p><strong>Product:</strong> Duckling</p>
+            <p><strong>Quantity:</strong> 1</p>
+            <p><strong>Unit Price:</strong> $19.99</p>
+            <p><strong>Total Item Price:</strong> $19.99</p>
+            <hr>
+            <p><strong>Sub Total:</strong> $19.99</p>
+            <p><strong>Tax (13%):</strong> $2.60</p>
+            <p><strong>Total Payable:</strong> $22.59</p>
+            <hr>
+            <p><strong>Customer Name:</strong> Jacob Wilkinson</p>
+            <p><strong>Customer Phone:</strong> 169-034-9681</p>
+        </div>
+    </main>
+</body>
+</html>

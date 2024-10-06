@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducks R Us</title>
+    <style>
+        /* styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #e4d88c;
+            background-color: #26170c;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Nav Like The Rapper */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #2e1c0f;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #e4d88c;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Header */
+        header {
+            background-color: #2e1c0f;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Main content */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        section article {
+            border: 1px solid #2e1c0f;
+            margin: 20px;
+            padding: 20px;
+            background-color: #2e1c0f;
+            width: 300px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section article img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1{
+            color: #ffd500;
+        } 
+        h2 {
+            color: #ffd500;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            section article {
+                width: 100%;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Nav -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buy-now.html">Buy Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Ducks R Us</h1>
+    </header>
+
+    <!-- Products -->
+    <main>
+        <section>
+            <article>
+                <h2>Duckling</h2>
+                <img src="/images/duckling.jpg" alt="an image of a duckling">
+                <p>Price: $19.99</p>
+                <p>The duckling is an amazing product! It's a duck but in jit form. They just walk around and stuff and will probably follow you like it's your mother. I heard they poo a lot so that's a downside, but they're cute so it's cool. </p>
+            </article>
+            
+            <article>
+                <h2>Mallard</h2>
+                <img src="/images/mallard.jpg" alt="Image of Product 2">
+                <p>Price: $29.99</p>
+                <p>The mallard is like a duck that's a dude. It's head is green so like that makes it cool and stuff. They quack and sound funny. If you purchase do not let it fly during hunting season. Quack.</p>
+            </article>
+
+            <article>
+                <h2>THE DUCK</h2>
+                <img src="/images/THE Duck.jpg" alt="Image of Product 3">
+                <p>Price: $39.99</p>
+                <p>THE DUCK is a giant floating duck that floats around the ocean. They say not to dump your plastic in the ocean but what is this thing. It cost some tax money to build this but it's whatever because he cool. Im gonna name him gerald because that's cool. Gerald floats around and does his thing.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
